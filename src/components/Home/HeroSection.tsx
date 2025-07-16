@@ -115,7 +115,7 @@ export function HeroSection() {
               }}>
                   Contact Me
                 </motion.a>
-                <motion.a href="#" className="px-6 py-3 border border-gray-300 dark:border-gray-700 hover:border-primary-500 dark:hover:border-primary-400 text-gray-800 dark:text-white font-medium rounded-lg transition-colors flex items-center gap-2 hover:bg-gray-50 dark:hover:bg-gray-800" whileHover={{
+                <motion.a href="https://drive.google.com/file/d/1QvMKmP7adr6ms3IgBSGmgHhnRxq5z-Wm/view?usp=sharing" className="px-6 py-3 border border-gray-300 dark:border-gray-700 hover:border-primary-500 dark:hover:border-primary-400 text-gray-800 dark:text-white font-medium rounded-lg transition-colors flex items-center gap-2 hover:bg-gray-50 dark:hover:bg-gray-800" whileHover={{
                 scale: 1.05,
                 borderColor: '#3B82F6'
               }} whileTap={{
