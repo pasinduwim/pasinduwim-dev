@@ -3,11 +3,14 @@
   "version": "0.0.1",
   "private": true,
   "type": "module",
+  "homepage": "https://pasinduwim.github.io/pasinduwim-dev",
   "scripts": {
     "dev": "npx vite",
     "build": "npx vite build",
     "lint": "eslint . --ext .js,.jsx,.ts,.tsx",
-    "preview": "npx vite preview"
+    "preview": "npx vite preview",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist"
   },
   "dependencies": {
     "@vitejs/plugin-react": "latest",
