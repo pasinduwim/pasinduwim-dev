@@ -158,150 +158,150 @@ export function ContactSection() {
           <motion.div className="bg-white dark:bg-gray-900 rounded-lg shadow-lg border border-gray-200 dark:border-gray-700 p-8 overflow-hidden relative" whileHover={{
           boxShadow: '0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04)'
         }}>
-            {/* Animated gradient background */}
-            <div className="absolute inset-0 bg-gradient-to-br from-primary-50/50 to-secondary-50/50 dark:from-primary-900/10 dark:to-secondary-900/10 z-0"></div>
-            {/* Animated corner accents */}
-            <div className="absolute top-0 left-0 w-16 h-16 bg-gradient-to-br from-primary-500 to-secondary-500 opacity-20 dark:opacity-10 rounded-br-full"></div>
-            <div className="absolute bottom-0 right-0 w-16 h-16 bg-gradient-to-tl from-secondary-500 to-accent-500 opacity-20 dark:opacity-10 rounded-tl-full"></div>
-            <div className="relative z-10">
-              <h3 className="text-2xl font-semibold bg-gradient-to-r from-primary-600 to-secondary-600 bg-clip-text text-transparent mb-6">
-                Send Me a Message
-              </h3>
-              <form>
-                <div className="grid md:grid-cols-2 gap-6 mb-6">
-                  <motion.div initial={{
-                  opacity: 0,
-                  x: -20
-                }} whileInView={{
-                  opacity: 1,
-                  x: 0
-                }} transition={{
-                  duration: 0.5,
-                  delay: 0.1
-                }} viewport={{
-                  once: true
-                }}>
-                    <label htmlFor="name" className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">
-                      Your Name
-                    </label>
-                    <motion.div whileHover={{
-                    scale: 1.01
-                  }} transition={{
-                    duration: 0.2
-                  }}>
-                      <motion.input type="text" id="name" className="w-full px-4 py-3 rounded-lg border border-gray-300 dark:border-gray-700 bg-white dark:bg-gray-800 text-gray-900 dark:text-white focus:outline-none focus:ring-2 focus:ring-primary-500 transition-all duration-300" placeholder="John Doe" whileFocus={{
-                      scale: 1.01,
-                      borderColor: '#3B82F6'
-                    }} transition={{
-                      duration: 0.2
-                    }} />
-                    </motion.div>
-                  </motion.div>
-                  <motion.div initial={{
-                  opacity: 0,
-                  x: 20
-                }} whileInView={{
-                  opacity: 1,
-                  x: 0
-                }} transition={{
-                  duration: 0.5,
-                  delay: 0.2
-                }} viewport={{
-                  once: true
-                }}>
-                    <label htmlFor="email" className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">
-                      Your Email
-                    </label>
-                    <motion.div whileHover={{
-                    scale: 1.01
-                  }} transition={{
-                    duration: 0.2
-                  }}>
-                      <motion.input type="email" id="email" className="w-full px-4 py-3 rounded-lg border border-gray-300 dark:border-gray-700 bg-white dark:bg-gray-800 text-gray-900 dark:text-white focus:outline-none focus:ring-2 focus:ring-primary-500 transition-all duration-300" placeholder="john@example.com" whileFocus={{
-                      scale: 1.01,
-                      borderColor: '#3B82F6'
-                    }} transition={{
-                      duration: 0.2
-                    }} />
-                    </motion.div>
-                  </motion.div>
-                </div>
-                <motion.div className="mb-6" initial={{
-                opacity: 0,
-                y: 20
-              }} whileInView={{
-                opacity: 1,
-                y: 0
-              }} transition={{
-                duration: 0.5,
-                delay: 0.3
-              }} viewport={{
-                once: true
-              }}>
-                  <label htmlFor="subject" className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">
-                    Subject
-                  </label>
-                  <motion.div whileHover={{
-                  scale: 1.01
-                }} transition={{
-                  duration: 0.2
-                }}>
-                    <motion.input type="text" id="subject" className="w-full px-4 py-3 rounded-lg border border-gray-300 dark:border-gray-700 bg-white dark:bg-gray-800 text-gray-900 dark:text-white focus:outline-none focus:ring-2 focus:ring-primary-500 transition-all duration-300" placeholder="Project Inquiry" whileFocus={{
-                    scale: 1.01,
-                    borderColor: '#3B82F6'
-                  }} transition={{
-                    duration: 0.2
-                  }} />
-                  </motion.div>
-                </motion.div>
-                <motion.div className="mb-6" initial={{
-                opacity: 0,
-                y: 20
-              }} whileInView={{
-                opacity: 1,
-                y: 0
-              }} transition={{
-                duration: 0.5,
-                delay: 0.4
-              }} viewport={{
-                once: true
-              }}>
-                  <label htmlFor="message" className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">
-                    Message
-                  </label>
-                  <motion.div whileHover={{
-                  scale: 1.01
-                }} transition={{
-                  duration: 0.2
-                }}>
-                    <motion.textarea id="message" rows={5} className="w-full px-4 py-3 rounded-lg border border-gray-300 dark:border-gray-700 bg-white dark:bg-gray-800 text-gray-900 dark:text-white focus:outline-none focus:ring-2 focus:ring-primary-500 transition-all duration-300" placeholder="Your message here..." whileFocus={{
-                    scale: 1.01,
-                    borderColor: '#3B82F6'
-                  }} transition={{
-                    duration: 0.2
-                  }}></motion.textarea>
-                  </motion.div>
-                </motion.div>
-                <motion.button type="submit" className="px-8 py-3 bg-gradient-to-r from-primary-500 to-secondary-500 hover:from-primary-600 hover:to-secondary-600 text-white font-medium rounded-lg transition-all duration-300 shadow-lg hover:shadow-primary-500/25 flex items-center justify-center" whileHover={{
-                scale: 1.05,
-                boxShadow: '0 10px 25px -5px rgba(59, 130, 246, 0.5)'
-              }} whileTap={{
-                scale: 0.95
-              }} initial={{
-                opacity: 0
-              }} whileInView={{
-                opacity: 1
-              }} transition={{
-                duration: 0.5,
-                delay: 0.5
-              }} viewport={{
-                once: true
-              }}>
-                  <SendIcon size={18} className="mr-2" />
-                  Send Message
-                </motion.button>
-              </form>
-            </div>
+            {/*/!* Animated gradient background *!/*/}
+            {/*<div className="absolute inset-0 bg-gradient-to-br from-primary-50/50 to-secondary-50/50 dark:from-primary-900/10 dark:to-secondary-900/10 z-0"></div>*/}
+            {/*/!* Animated corner accents *!/*/}
+            {/*<div className="absolute top-0 left-0 w-16 h-16 bg-gradient-to-br from-primary-500 to-secondary-500 opacity-20 dark:opacity-10 rounded-br-full"></div>*/}
+            {/*<div className="absolute bottom-0 right-0 w-16 h-16 bg-gradient-to-tl from-secondary-500 to-accent-500 opacity-20 dark:opacity-10 rounded-tl-full"></div>*/}
+            {/*<div className="relative z-10">*/}
+            {/*  <h3 className="text-2xl font-semibold bg-gradient-to-r from-primary-600 to-secondary-600 bg-clip-text text-transparent mb-6">*/}
+            {/*    Send Me a Message*/}
+            {/*  </h3>*/}
+            {/*  <form>*/}
+            {/*    <div className="grid md:grid-cols-2 gap-6 mb-6">*/}
+            {/*      <motion.div initial={{*/}
+            {/*      opacity: 0,*/}
+            {/*      x: -20*/}
+            {/*    }} whileInView={{*/}
+            {/*      opacity: 1,*/}
+            {/*      x: 0*/}
+            {/*    }} transition={{*/}
+            {/*      duration: 0.5,*/}
+            {/*      delay: 0.1*/}
+            {/*    }} viewport={{*/}
+            {/*      once: true*/}
+            {/*    }}>*/}
+            {/*        <label htmlFor="name" className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">*/}
+            {/*          Your Name*/}
+            {/*        </label>*/}
+            {/*        <motion.div whileHover={{*/}
+            {/*        scale: 1.01*/}
+            {/*      }} transition={{*/}
+            {/*        duration: 0.2*/}
+            {/*      }}>*/}
+            {/*          <motion.input type="text" id="name" className="w-full px-4 py-3 rounded-lg border border-gray-300 dark:border-gray-700 bg-white dark:bg-gray-800 text-gray-900 dark:text-white focus:outline-none focus:ring-2 focus:ring-primary-500 transition-all duration-300" placeholder="John Doe" whileFocus={{*/}
+            {/*          scale: 1.01,*/}
+            {/*          borderColor: '#3B82F6'*/}
+            {/*        }} transition={{*/}
+            {/*          duration: 0.2*/}
+            {/*        }} />*/}
+            {/*        </motion.div>*/}
+            {/*      </motion.div>*/}
+            {/*      <motion.div initial={{*/}
+            {/*      opacity: 0,*/}
+            {/*      x: 20*/}
+            {/*    }} whileInView={{*/}
+            {/*      opacity: 1,*/}
+            {/*      x: 0*/}
+            {/*    }} transition={{*/}
+            {/*      duration: 0.5,*/}
+            {/*      delay: 0.2*/}
+            {/*    }} viewport={{*/}
+            {/*      once: true*/}
+            {/*    }}>*/}
+            {/*        <label htmlFor="email" className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">*/}
+            {/*          Your Email*/}
+            {/*        </label>*/}
+            {/*        <motion.div whileHover={{*/}
+            {/*        scale: 1.01*/}
+            {/*      }} transition={{*/}
+            {/*        duration: 0.2*/}
+            {/*      }}>*/}
+            {/*          <motion.input type="email" id="email" className="w-full px-4 py-3 rounded-lg border border-gray-300 dark:border-gray-700 bg-white dark:bg-gray-800 text-gray-900 dark:text-white focus:outline-none focus:ring-2 focus:ring-primary-500 transition-all duration-300" placeholder="john@example.com" whileFocus={{*/}
+            {/*          scale: 1.01,*/}
+            {/*          borderColor: '#3B82F6'*/}
+            {/*        }} transition={{*/}
+            {/*          duration: 0.2*/}
+            {/*        }} />*/}
+            {/*        </motion.div>*/}
+            {/*      </motion.div>*/}
+            {/*    </div>*/}
+            {/*    <motion.div className="mb-6" initial={{*/}
+            {/*    opacity: 0,*/}
+            {/*    y: 20*/}
+            {/*  }} whileInView={{*/}
+            {/*    opacity: 1,*/}
+            {/*    y: 0*/}
+            {/*  }} transition={{*/}
+            {/*    duration: 0.5,*/}
+            {/*    delay: 0.3*/}
+            {/*  }} viewport={{*/}
+            {/*    once: true*/}
+            {/*  }}>*/}
+            {/*      <label htmlFor="subject" className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">*/}
+            {/*        Subject*/}
+            {/*      </label>*/}
+            {/*      <motion.div whileHover={{*/}
+            {/*      scale: 1.01*/}
+            {/*    }} transition={{*/}
+            {/*      duration: 0.2*/}
+            {/*    }}>*/}
+            {/*        <motion.input type="text" id="subject" className="w-full px-4 py-3 rounded-lg border border-gray-300 dark:border-gray-700 bg-white dark:bg-gray-800 text-gray-900 dark:text-white focus:outline-none focus:ring-2 focus:ring-primary-500 transition-all duration-300" placeholder="Project Inquiry" whileFocus={{*/}
+            {/*        scale: 1.01,*/}
+            {/*        borderColor: '#3B82F6'*/}
+            {/*      }} transition={{*/}
+            {/*        duration: 0.2*/}
+            {/*      }} />*/}
+            {/*      </motion.div>*/}
+            {/*    </motion.div>*/}
+            {/*    <motion.div className="mb-6" initial={{*/}
+            {/*    opacity: 0,*/}
+            {/*    y: 20*/}
+            {/*  }} whileInView={{*/}
+            {/*    opacity: 1,*/}
+            {/*    y: 0*/}
+            {/*  }} transition={{*/}
+            {/*    duration: 0.5,*/}
+            {/*    delay: 0.4*/}
+            {/*  }} viewport={{*/}
+            {/*    once: true*/}
+            {/*  }}>*/}
+            {/*      <label htmlFor="message" className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">*/}
+            {/*        Message*/}
+            {/*      </label>*/}
+            {/*      <motion.div whileHover={{*/}
+            {/*      scale: 1.01*/}
+            {/*    }} transition={{*/}
+            {/*      duration: 0.2*/}
+            {/*    }}>*/}
+            {/*        <motion.textarea id="message" rows={5} className="w-full px-4 py-3 rounded-lg border border-gray-300 dark:border-gray-700 bg-white dark:bg-gray-800 text-gray-900 dark:text-white focus:outline-none focus:ring-2 focus:ring-primary-500 transition-all duration-300" placeholder="Your message here..." whileFocus={{*/}
+            {/*        scale: 1.01,*/}
+            {/*        borderColor: '#3B82F6'*/}
+            {/*      }} transition={{*/}
+            {/*        duration: 0.2*/}
+            {/*      }}></motion.textarea>*/}
+            {/*      </motion.div>*/}
+            {/*    </motion.div>*/}
+            {/*    <motion.button type="submit" className="px-8 py-3 bg-gradient-to-r from-primary-500 to-secondary-500 hover:from-primary-600 hover:to-secondary-600 text-white font-medium rounded-lg transition-all duration-300 shadow-lg hover:shadow-primary-500/25 flex items-center justify-center" whileHover={{*/}
+            {/*    scale: 1.05,*/}
+            {/*    boxShadow: '0 10px 25px -5px rgba(59, 130, 246, 0.5)'*/}
+            {/*  }} whileTap={{*/}
+            {/*    scale: 0.95*/}
+            {/*  }} initial={{*/}
+            {/*    opacity: 0*/}
+            {/*  }} whileInView={{*/}
+            {/*    opacity: 1*/}
+            {/*  }} transition={{*/}
+            {/*    duration: 0.5,*/}
+            {/*    delay: 0.5*/}
+            {/*  }} viewport={{*/}
+            {/*    once: true*/}
+            {/*  }}>*/}
+            {/*      <SendIcon size={18} className="mr-2" />*/}
+            {/*      Send Message*/}
+            {/*    </motion.button>*/}
+            {/*  </form>*/}
+            {/*</div>*/}
           </motion.div>
         </motion.div>
       </div>
