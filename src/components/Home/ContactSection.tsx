@@ -96,7 +96,7 @@ export function ContactSection() {
           {[{
           icon: <MailIcon className="text-primary-600 dark:text-primary-400" size={20} />,
           title: 'Email',
-          content: 'pasinduwimalarathne2000@gmail.com',
+          content: 'pasindu.20210798@iit.ac.lk',
           gradient: 'from-primary-500 to-blue-500',
           bgGradient: 'from-primary-50 to-blue-50 dark:from-primary-900/20 dark:to-blue-900/20'
         }, {
